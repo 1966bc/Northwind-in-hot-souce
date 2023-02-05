@@ -56,3 +56,5 @@ after running something like this
 chmod +x northwind.py
 and then
 ./northwind
+
+Developed on Debian GNU/Linux 10 (buster) MMXXIII, hiems
