@@ -1,6 +1,8 @@
 # Northwind-in-hot-souce
 Tkinter vs wxPython
 
+![alt tag](https://user-images.githubusercontent.com/5463566/216831264-fc650f4c-b847-432c-a9d0-56d4feb2e79c.png)
+
 Hello, this project has the ambition to demonstrate the use and 
 thus the preformance of two of the most popular graphical toolkits
 used in the Python environment, Tkinter and wxPython.
