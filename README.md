@@ -46,6 +46,7 @@ that it is welcome.
 Have fun with it.
 
 P.S.
+
 I have created two folders for the two versions.
 To launch the ordnance you have to run the file called
 northwind.py present in the respective folders, which means that if 
