@@ -1,6 +1,11 @@
 # Northwind-in-hot-souce
 Tkinter vs wxPython
 
+[![Python 3](https://img.shields.io/badge/python-3%20-blue.svg)](https://www.python.org/downloads/)
+[![Tkinter](https://img.shields.io/badge/Tkinter%20-green.svg)](https://docs.python.org/3/library/tk.html)
+[![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg)](https://www.sqlite.org/index.html)
+
+
 ![alt tag](https://user-images.githubusercontent.com/5463566/216831264-fc650f4c-b847-432c-a9d0-56d4feb2e79c.png)
 
 Hello, this project has the ambition to demonstrate the use and 
