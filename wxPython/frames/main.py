@@ -3,7 +3,7 @@
 # project:  Northwind in hot souce
 # authors:  1966bc
 # mailto:   [giuseppecostanzi@gmail.com]
-# modify:   hiems MMXXI
+# modify:   hiems MMXXIII
 # -----------------------------------------------------------------------------
 """ This is the main module of Northwind in hot souce."""
 import sys
@@ -381,20 +381,26 @@ class App(wx.App):
         self.SetAppDisplayName("Northwind in hot sauce")        
         
         w = Main(None)
-        self.SetTopWindow(w)
+        wx.GetApp().SetTopWindow(w)
         w.on_open()
         w.Show()
 
         return True
     
     def on_exit(self, evt=None):
-        if wx.MessageBox("Do you want to quit?", self.GetAppDisplayName(), wx.YES_NO |wx.ICON_QUESTION| wx.CENTRE |wx.NO_DEFAULT) == 2:
+        
+        if wx.MessageBox("Do you want to quit?",
+                         self.GetAppDisplayName(),
+                         wx.YES_NO |wx.ICON_QUESTION| wx.CENTRE |wx.NO_DEFAULT) == 2:
+
             wx.GetApp().engine.con.close()
-            self.Destroy()
+            wx.Exit()
+            #self.Close()#do nothing apparent on linux...
+           #self.Destroy()#segmentation fault on linux
             
 
 def main():
-    app = App()
+    app = App(redirect=True, filename = "log.txt")
     app.MainLoop()
 
 if __name__ == "__main__":
